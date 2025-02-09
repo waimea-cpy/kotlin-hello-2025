@@ -1,6 +1,6 @@
 # Kotlin Basics
 
-Learning to code in Kotlin - taking the first steps:
+Learning to code in Kotlin - taking the first steps. This repo covers:
 
 - Output to the terminal
 - Variables
@@ -8,12 +8,13 @@ Learning to code in Kotlin - taking the first steps:
 - String manipulation
 - Branching
 - Loops
+- Functions
 
 ## Kotlin Language
 
-[Kotlin](https://kotlinlang.org/) is a cross-platform, **compiled** language, created by [JetBrains](https://www.jetbrains.com/) in 2011. 
+[Kotlin](https://kotlinlang.org/) is a cross-platform, **compiled** language, created by [JetBrains](https://www.jetbrains.com/) in 2011. The intention was to overcome some of the shortcomings of **Java**. 
 
-Like Java, Kotlin runs on top of the Java Virtual Machine (JVM) but offers a cleaner syntax with more modern features. Since 2019 it is Google's preferred language for all Android app development.
+Like Java, Kotlin runs on top of the **Java Virtual Machine (JVM)** but offers a cleaner syntax with more modern features. Since 2019, Kotlin is Google's preferred language for all Android app development.
 
 ## Language Resources:
 

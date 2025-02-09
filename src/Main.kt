@@ -13,20 +13,30 @@ fun main() {
  *
  * Cover:
  *  - Comments
- *  - Output: print / println
+ *  - Output:
+ *      - print
+ *      - println
  *  - String concatenation
  *  - Variables:
  *      - var
  *      - val
  *      - naming
- *  - Input: readln
+ *  - Input:
+ *      - readln
+ *      - readlnOrNull
  *  - Output with string templates:
  *      - $....
  *      - ${....} for calcs
  *  - String conversion:
  *      - lower
  *      - upper
- *      - to Int
- *  - Branching: if, else
- *  - Looping: while, for
+ *      - toInt
+ *      - toIntOrNull
+ *  - Branching:
+ *      - if, else
+ *      - when
+ *  - Looping:
+ *      - while, for
+ *      - ranges: a..b, a..<b, downTo
+ *  - Functions
  */
