@@ -85,24 +85,49 @@ fun main() {
 
     // If you need a number from user...
     print("Enter your favourite number: ")
-    val number = readln().toLongOrNull()
+    val number = readln().toIntOrNull()
 
 
     // BRANCHING ======================================
 
+    // Can use if / else if / else
     if (number == null) {
         println("That's not a number")
     }
     else {
-        println("Oh, yes! $number is lovely!")
+        println("So, you like $number?")
     }
 
     // Alternatively
     when (number) {
         null -> println("That's not a number")
-        else -> println("Oh, $number is lovely!")
+           7 -> println("Seven is just the best!")
+          13 -> println("No, that's unlucky!")
+        else -> println("Oh, interesting")
     }
 
+
+    // LOOPING / ITERATION ================================
+
+    // while loops
+    var count = 1
+    while (count <= 10) {
+        println(count)
+        count++
+    }
+
+    // Infinite loop
+    while (true) {
+        println("Hi! Type 'x' to exit")
+        val input = readln()
+        if (input == "x") break     // The breakout condition
+    }
+
+    // For range loop
+    for (num in 1..10) {
+        println(num)
+    }
+    
 }
 
 
