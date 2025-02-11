@@ -1,17 +1,22 @@
+import java.util.*
+
 /**
  * This is a little intro to Kotlin
  */
 
 
 /**
- * The main function is the entry
- * point to any Kotlin program
+ * The main() function is the entry point to any Kotlin program
  */
 fun main() {
-    // We can output to the terminal
-    // with print() and println()
+    // OUTPUT ======================================
+
+    // We can output to the terminal with print() and println()
+
+    // println() move the cursor to the next line after output
     println("Hello World!")
 
+    // print() keeps the output on the same line
     print("Hello")
     print(" ")
     print("World!")
@@ -20,20 +25,22 @@ fun main() {
     // Strings are concatenated with a +
     println("Hello" + " " + "World!")
 
-    // In kotlin, there are two types of variable
 
-    // If a variable will never change (immutable)
-    // we use 'val' (value)...
+    // VARIABLES ======================================
+
+    // In kotlin, there are two types of variable...
+
+    // If a variable will never change (immutable) we use 'val' (value)
     val name = "Steve"
     val dob = "27 Dec 1967"
 
-    // If a variable will change (mutable), we use
-    // 'var' (variable)
+    // If a variable will change (mutable), we use 'var' (variable)
     var height = 185
     var favColour = "Green"
-}
-    // Variable names should always start with
-    // a lowercase letter
+    height = 187            // New values (reassignment)
+    favColour = "Red"
+
+    // Variable names should always start with a lowercase letter
     val numLegs = 2     // Good!
     val NumLegs = 2     // Bad!
 
@@ -43,6 +50,60 @@ fun main() {
     val species_of_pet = "cat"  // Good... SnakeCase
 
 
+    // STRING TEMPLATES ======================================
+
+    // We often want to output variable values with text
+
+    println("My name is " + name)   // Using concatenation
+
+    println("My name is $name")     // Using a template
+    println("I have $numLegs legs")
+
+    // If we need to do calculations, use {...}
+    println("I have ${numLegs * 5} toes")
+
+
+    // STRING MANIPULATION ======================================
+
+    println(name.uppercase())
+    println(name.lowercase())
+
+    val scoreText = "1000"          // This is a string!
+    val score = scoreText.toInt()   // This is an Int and we can do Maths
+    println("Score: $score")
+
+    val testText = "Goat"
+    val textNum = testText.toIntOrNull()    // This copes with bad inputs
+    println(textNum)
+
+
+    // USER INPUT ====================================
+
+    print("Enter your favourite color: ")
+    val colour = readln()
+    println("I like $colour too!")
+
+    // If you need a number from user...
+    print("Enter your favourite number: ")
+    val number = readln().toLongOrNull()
+
+
+    // BRANCHING ======================================
+
+    if (number == null) {
+        println("That's not a number")
+    }
+    else {
+        println("Oh, yes! $number is lovely!")
+    }
+
+    // Alternatively
+    when (number) {
+        null -> println("That's not a number")
+        else -> println("Oh, $number is lovely!")
+    }
+
+}
 
 
 
@@ -64,9 +125,6 @@ fun main() {
  *      - var
  *      - val
  *      - naming
- *  - Input:
- *      - readln
- *      - readlnOrNull
  *  - Output with string templates:
  *      - $....
  *      - ${....} for calcs
@@ -75,6 +133,9 @@ fun main() {
  *      - upper
  *      - toInt
  *      - toIntOrNull
+ *  - Input:
+ *      - readln
+ *      - readlnOrNull
  *  - Branching:
  *      - if, else
  *      - when
